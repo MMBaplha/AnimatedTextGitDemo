@@ -8,7 +8,7 @@ function random() {
 //to cahnge each letter independently
 const letter = document.querySelectorAll('.letter');
 const intervalId = setInterval(function() {
-    for (let letter of letters) {
-        letter.style.color = randomRGB();
+    for (let letters of letter) {
+        letters.style.color = random();
     }
 }, 2000);
